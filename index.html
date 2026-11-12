@@ -1,1 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eletrotécnico | Equipe 16 - Feira de Profissões</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <!-- Barra de Navegação -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#inicio" class="logo">
+        <span class="bolt">⚡</span> ELETRO<span>TÉCNICA</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#atuacao">Atuação</a>
+        <a href="#formacao">Onde Estudar</a>
+        <a href="#mercado">Mercado</a>
+        <a href="#ingresso">Ingresso</a>
+        <a href="#quiz" class="btn-nav">Quiz Rápido</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Seção Principal (Hero) -->
+  <section id="inicio" class="hero">
+    <div class="circuit-bg"></div>
+    <div class="container hero-content">
+      <div class="badge-group">
+        <span class="badge">Feira de Profissões</span>
+        <span class="badge badge-outline">Engenharia e Tecnologia</span>
+      </div>
+      <h1>Eletrotécnico: O Profissional que Move a <span>Tecnologia e a Energia</span></h1>
+      <p class="hero-desc">
+        Descubra como a eletrotécnica transforma projetos em energia real, impulsiona a indústria moderna e lidera a transição para fontes renováveis.
+      </p>
+      <div class="presenter-card">
+        <div class="presenter-info">
+          <span class="label">Apresentação por</span>
+          <strong>Nicolas — Equipe 16</strong>
+        </div>
+        <a href="#atuacao" class="btn-primary">Explorar Carreira ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 1: Atuação -->
+  <section id="atuacao" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01. O que faz?</span>
+        <h2>Áreas de Atuação e Responsabilidades</h2>
+        <p>O técnico em eletrotécnica planeja, executa e mantém sistemas elétricos seguros e eficientes.</p>
+      </div>
+
+      <div class="grid-4">
+        <div class="card">
+          <div class="card-icon">📐</div>
+          <h3>Projetos Elétricos</h3>
+          <p>Elaboração e execução de esquemas elétricos residenciais, comerciais e industriais dentro das normas técnicas.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">⚙️</div>
+          <h3>Manutenção Industrial</h3>
+          <p>Manutenção preventiva e corretiva em máquinas elétricas, motores, transformadores e painéis de distribuição.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🔋</div>
+          <h3>Sistemas de Energia</h3>
+          <p>Operação e controle de redes de geração, transmissão, distribuição e projetos de eficiência energética.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🤖</div>
+          <h3>Automação</h3>
+          <p>Implementação e controle de processos industriais automatizados, sensores e controladores lógicos (CLPs).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 2: Formação em Curitiba -->
+  <section id="formacao" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02. Formação Acadêmica</span>
+        <h2>Onde Estudar em Curitiba?</h2>
+        <p>Filtre abaixo entre cursos técnicos profissionalizantes e graduações superiores correlatas.</p>
+      </div>
+
+      <div class="filter-tabs">
+        <button class="tab-btn active" data-filter="todos">Todas as Instituições</button>
+        <button class="tab-btn" data-filter="tecnico">Cursos Técnicos</button>
+        <button class="tab-btn" data-filter="superior">Ensino Superior (Engenharia)</button>
+      </div>
+
+      <div class="grid-3" id="instituicoesGrid">
+        <div class="inst-card" data-category="tecnico">
+          <span class="inst-type">Curso Técnico</span>
+          <h3>SENAI Paraná / Sistema FIEP</h3>
+          <p>Principal referência em formação prática e conectada diretamente às demandas da indústria paranaense.</p>
+        </div>
+
+        <div class="inst-card" data-category="tecnico">
+          <span class="inst-type">Curso Técnico</span>
+          <h3>IFPR — Instituto Federal do Paraná</h3>
+          <p>Ensino público e gratuito de excelência com formação técnica em Eletrotécnica integrada ou subsequente.</p>
+        </div>
+
+        <div class="inst-card" data-category="superior">
+          <span class="inst-type">Ensino Superior</span>
+          <h3>UTFPR</h3>
+          <p>Referência tecnológica em Engenharia Elétrica, Automação Industrial e cursos de tecnologia em Curitiba.</p>
+        </div>
+
+        <div class="inst-card" data-category="superior">
+          <span class="inst-type">Ensino Superior</span>
+          <h3>UFPR — Universidade Federal</h3>
+          <p>Formação acadêmica sólida e gratuita em Engenharia Elétrica com forte base em pesquisa e sistemas de potência.</p>
+        </div>
+
+        <div class="inst-card" data-category="superior">
+          <span class="inst-type">Ensino Superior</span>
+          <h3>PUCPR & Universidade Positivo</h3>
+          <p>Instituições privadas com laboratórios modernos para Engenharia Elétrica e Controle e Automação.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 3: Mercado de Trabalho -->
+  <section id="mercado" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03. Empregabilidade</span>
+        <h2>Mercado de Trabalho e Tendências</h2>
+        <p>Alta demanda na Região Metropolitana de Curitiba graças ao forte polo industrial.</p>
+      </div>
+
+      <div class="market-layout">
+        <div class="market-box">
+          <h3>🏭 Onde Trabalhar</h3>
+          <ul class="check-list">
+            <li><strong>Indústrias:</strong> Setor automotivo, alimentício e de manufatura.</li>
+            <li><strong>Concessionárias:</strong> Geração e distribuição de energia elétrica (ex: Copel).</li>
+            <li><strong>Infraestrutura:</strong> Hospitais, shoppings e construção civil de grande porte.</li>
+            <li><strong>Autônomo / Consultoria:</strong> Empresas próprias de projetos e instalações elétricas.</li>
+          </ul>
+        </div>
+
+        <div class="market-box highlight-box">
+          <h3>🚀 Tendências do Futuro</h3>
+          <div class="trend-item">
+            <strong>☀️ Energias Renováveis</strong>
+            <p>Expansão acelerada de usinas e painéis de energia solar fotovoltaica e eólica.</p>
+          </div>
+          <div class="trend-item">
+            <strong>🚗 Mobilidade Elétrica</strong>
+            <p>Infraestrutura de recarga e manutenção de veículos elétricos e híbridos.</p>
+          </div>
+          <div class="trend-item">
+            <strong>🌐 Indústria 4.0</strong>
+            <p>Fábricas inteligentes com monitoramento energético em tempo real.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 4: Formas de Ingresso -->
+  <section id="ingresso" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04. Passo a Passo</span>
+        <h2>Como Ingressar na Área?</h2>
+      </div>
+
+      <div class="grid-3">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <h3>Cursos Técnicos</h3>
+          <p>Processo seletivo próprio das instituições (IFPR, SENAI), análise do histórico escolar do Ensino Médio ou provas específicas.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <h3>Universidades Públicas</h3>
+          <p>Nota do <strong>ENEM</strong> através do sistema <strong>SiSU</strong> ou vestibulares tradicionais próprios (como UFPR).</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <h3>Universidades Privadas</h3>
+          <p>Vestibular agendado, aproveitamento da nota do ENEM ou programas governamentais de bolsas como o <strong>ProUni</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 5: Quiz Interativo para Visitantes -->
+  <section id="quiz" class="section">
+    <div class="container">
+      <div class="quiz-wrapper">
+        <div class="quiz-header">
+          <span class="section-tag">Interatividade no Estande</span>
+          <h2>Você tem perfil para Eletrotécnica?</h2>
+          <p>Responda 3 perguntas rápidas para descobrir!</p>
+        </div>
+
+        <div id="quizContainer">
+          <div class="quiz-question" id="questionText">Carregando pergunta...</div>
+          <div class="quiz-options" id="optionsContainer"></div>
+          <div class="quiz-footer">
+            <span id="progressText">Pergunta 1 de 3</span>
+          </div>
+        </div>
+
+        <div id="quizResult" class="quiz-result hidden">
+          <div class="result-icon">⚡</div>
+          <h3 id="resultTitle"></h3>
+          <p id="resultDesc"></p>
+          <button class="btn-primary" id="restartQuiz">Refazer Teste</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <strong>Equipe 16 — Nicolas</strong>
+        <p>Área Afim: Engenharia e Tecnologia | Profissão: Eletrotécnico</p>
+      </div>
+      <div class="footer-note">
+        Feira de Profissões • Curitiba - PR
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
